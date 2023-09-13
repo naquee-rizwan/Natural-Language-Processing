@@ -20,6 +20,5 @@ class PartsOfSpeechTagger:
 
     # Return list of (list of parts of speech tagged tokenized words) which
     # was processed by @process_parts_of_speech_tags
-
     def get_parts_of_speech_tags(self):
         return self.parts_of_speech_tagged_words_list

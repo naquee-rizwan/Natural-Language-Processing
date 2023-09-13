@@ -24,17 +24,14 @@ class Tokenizer:
         self.tokenized_sentences = []
 
     # Word tokenizer getter @get_tokenized_word
-
     def get_tokenized_words(self):
         return self.tokenized_words
 
     # Sentence tokenizer getter @get_tokenized_sentence
-
     def get_tokenized_sentences(self):
         return self.tokenized_sentences
 
     # Punkt sentence tokenizer  implementation @apply_punkt_sentence_tokenizer and @get_punkt_tokenized_sentences
-
     def process_using_punkt_tokenizer(self):
         sentence_tokenizer = PunktSentenceTokenizer(self.corpora.train_text)
         self.tokenized_sentences = sentence_tokenizer.tokenize(self.corpora.test_text)
